@@ -34,4 +34,10 @@ public class AppTest
     	String number ="1,2,a,c";    	
         assertTrue( isvalidUserName(number));     
     }
+
+    public void testExceptionHandling()
+    {
+    	String number ="1,-2";    	
+        assertTrue( isvalidUserName(number));     
+    }
 }

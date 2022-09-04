@@ -21,17 +21,27 @@ public class App
     		int sum=0;
     		int alphaNumber;
     		for(int i=0;i< StringNumber.length; i++){
+			try{
 			
-			char letter= StringNumber[i].charAt(0);
-    			if(letter>='a' && letter<= 'z') {
-    				alphaNumber= (int)letter - 'a'+1;
-    				sum=sum+alphaNumber;
-    			}
+				char letter= StringNumber[i].charAt(0);
+    				if(letter>='a' && letter<= 'z') {
+    					alphaNumber= (int)letter - 'a'+1;
+    					sum=sum+alphaNumber;
+    				}
 
-			else{
-    				alphaNumber=Integer.parseInt(StringNumber[i]);
-				sum=sum+alphaNumber;  
-    			}
+				else{
+    					alphaNumber=Integer.parseInt(StringNumber[i]);
+					
+					if(alphaNumber<0) {
+    						throw new Exception("Negatives not allowed");
+    					}
+
+					sum=sum+alphaNumber;  
+    				}
+			}
+			catch(Exception e){
+				System.out.print(e+"\n");
+			}	
 		}
 		System.out.println(sum);
 		return true;

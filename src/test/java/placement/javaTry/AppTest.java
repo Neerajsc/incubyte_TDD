@@ -46,4 +46,10 @@ public class AppTest
     	String number ="1,-2,-3";    	
         assertTrue( isvalidUserName(number));     
     }
+
+    public void testRemovingNumberGreaterThanThousand()
+    {
+    	String number ="1,1999,56";    	
+        assertTrue( isvalidUserName(number));     
+    }
 }

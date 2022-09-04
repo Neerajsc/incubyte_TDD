@@ -32,8 +32,13 @@ public class App
 	
 					else{
     						alphaNumber=Integer.parseInt(StringNumber[i]);
-					
-						if(alphaNumber<0) {
+						
+						if(alphaNumber >1000) {
+    							alphaNumber=0;
+    						}
+						
+						else if(alphaNumber<0) {
+							System.out.println("Negative no is "+alphaNumber+" \n");
     							throw new Exception("Negatives not allowed");
     						}
 	

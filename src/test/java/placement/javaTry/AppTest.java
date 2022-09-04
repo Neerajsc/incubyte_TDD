@@ -52,4 +52,10 @@ public class AppTest
     	String number ="1,1999,56";    	
         assertTrue( isvalidUserName(number));     
     }
+
+	public void testNewLineDelimeter()
+    {
+    	String number ="1\n2,3";    	
+        assertTrue( isvalidUserName(number));     
+    }
 }

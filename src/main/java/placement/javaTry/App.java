@@ -17,7 +17,7 @@ public class App
     			return false;
     		}
 		else {
-    			String[] StringNumber = name.split(",");
+    			String[] StringNumber = name.split(",|\n");
        		
     			int sum=0;
     			int alphaNumber;

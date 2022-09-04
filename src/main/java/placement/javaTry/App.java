@@ -21,8 +21,19 @@ public class App
     		int sum=0;
     		int alphaNumber;
     		for(int i=0;i< StringNumber.length; i++){
-			alphaNumber=Integer.parseInt(StringNumber[i]);
-			sum=sum+alphaNumber;
+			
+			char letter= StringNumber[i].charAt(0);
+    			if(letter>='a' && letter<= 'z') {
+    				alphaNumber= (int)letter - 'a'+1;
+    				sum=sum+alphaNumber;
+    			}
+
+			else{
+    				alphaNumber=Integer.parseInt(StringNumber[i]);
+				sum=sum+alphaNumber;  
+    			}
 		}
+		System.out.println(sum);
+		return true;
 	}
 }

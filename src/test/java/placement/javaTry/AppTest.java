@@ -22,4 +22,16 @@ public class AppTest
     	String number ="1,2";    	
         assertTrue( isvalidUserName(number));     
     }
+	
+    public void testManyNumberAdd()
+    {
+    	String number ="1,2,3,4,5";    	
+        assertTrue( isvalidUserName(number));     
+    }
+
+    public void testAlphabets()
+    {
+    	String number ="1,2,a,c";    	
+        assertTrue( isvalidUserName(number));     
+    }
 }

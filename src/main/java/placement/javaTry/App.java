@@ -15,5 +15,14 @@ public class App
     		System.out.println("0");
     		return false;
     	}
-
+	else {
+    		String[] StringNumber = name.split(",");
+       		
+    		int sum=0;
+    		int alphaNumber;
+    		for(int i=0;i< StringNumber.length; i++){
+			alphaNumber=Integer.parseInt(StringNumber[i]);
+			sum=sum+alphaNumber;
+		}
+	}
 }

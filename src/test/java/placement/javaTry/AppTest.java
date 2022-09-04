@@ -13,9 +13,13 @@ public class AppTest
 
     public void testApp()
     {
-    	String number ="";
-
-    	
+    	String number ="";    	
         assertFalse( isvalidUserName(number));     
+    }
+
+    public void testAppComma()
+    {
+    	String number ="1,2";    	
+        assertTrue( isvalidUserName(number));     
     }
 }

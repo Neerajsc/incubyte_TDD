@@ -40,4 +40,10 @@ public class AppTest
     	String number ="1,-2";    	
         assertTrue( isvalidUserName(number));     
     }
+
+    public void testShowingMultipleException()
+    {
+    	String number ="1,-2,-3";    	
+        assertTrue( isvalidUserName(number));     
+    }
 }
